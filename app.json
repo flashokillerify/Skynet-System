@@ -1,8 +1,8 @@
 {
       "name": "Darkness-Skynet-System",
-      "description": "sadness is closer than it appears th>
+      "description": "sadness is closer than it appears "
       "keywords": ["telegram"],
-   "repository": "https://github.com/flashokillerify/Skynet-System
+   "repository": "https://github.com/flashokillerify/Skynet-System"
    "addons": [
       {
          "options": {
@@ -37,23 +37,18 @@
        "required": false,
        "value": ""
        },
-       "SKYNEST": { 
+       "SKYNET": { 
        "description": "your raw skynet id",
        "required": true,
        "value": "" 
        },
-       "ENFFORCERS": {
-       "description": "RAW ENFORCERS id",
+       "ENFORCERS": {
+       "description": "ENFORCERS id",
        "required": true,
        "value": ""
        },
        "SKYNET": {
        "description": "real skynet id",
-       "required": true,
-       "value": ""
-       },
-       "ENFORCERS": {
-       "description": " ENFORCERS id"
        "required": true,
        "value": ""
        },
