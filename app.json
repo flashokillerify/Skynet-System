@@ -1,0 +1,86 @@
+{
+      "name": "Darkness-Skynet-System",
+      "description": "sadness is closer than it appears th>
+      "keywords": ["telegram"],
+   "repository": "https://github.com/flashokillerify/Skynet-System
+   "addons": [
+      {
+         "options": {
+            "version": "11"
+         },
+         "plan": "heroku-postgresql"
+      }
+   ],
+   "env": {
+      "API_ID_KEY": {
+         "description": "my.telegram.org",
+         "required": true,
+         "value": ""
+      },
+      "API_HASH_KEY": {
+        "description": "my.telegram.org",
+        "required": true,
+        "value": ""
+       },
+        "STRING_SESSION": {
+         "description": "https://t.me/SessionStringGeneratorZBot then select Telethon",
+         "required": true,
+         "value": ""
+      },
+       "HEROKU_API_KEY": {
+        "description": "get from heroku settings",
+        "required": false,
+        "value": ""
+       },
+       "HEROKU_APP_NAME": {
+       "description": " your heroku app name",
+       "required": false,
+       "value": ""
+       },
+       "SKYNEST": { 
+       "description": "your raw skynet id",
+       "required": true,
+       "value": "" 
+       },
+       "ENFFORCERS": {
+       "description": "RAW ENFORCERS id",
+       "required": true,
+       "value": ""
+       },
+       "SKYNET": {
+       "description": "real skynet id",
+       "required": true,
+       "value": ""
+       },
+       "ENFORCERS": {
+       "description": " ENFORCERS id"
+       "required": true,
+       "value": ""
+       },
+       "MONGO_DB_URL": {
+       "description": "mongodb url"
+       "required": true,
+       "value": ""
+       },
+       "SKYNET_LOGS": {
+       "description": "skynet logs username",
+       "required": "true",
+       "value": ""
+       },
+       "SKYNET_APPROVED_LOGS": {
+       "description": skynet apporved logs channel username",
+       "required": "true",
+       "value": ""
+       },
+       "GBAN_MSG_LOGS": {
+       "description": "your private conuter • xx id",
+       "required": "true",
+       "value": ""
+       },
+       "BOT_TOKEN": {
+       "description": "your bot token"
+       "required": "true",
+       "value": ""
+      }
+   }
+}
