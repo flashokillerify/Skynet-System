@@ -27,8 +27,8 @@ if ENV:
     STRING_SESSION = os.environ.get("STRING_SESSION")
     HEROKU_API_KEY = os.environ.get("HEROKU_API_KEY")
     HEROKU_APP_NAME = os.environ.get("HEROKU_APP_NAME")
-    RAW_Skynet = os.environ.get("SKYNEST", "")
-    RAW_ENFORCERS = os.environ.get("ENFFORCERS", "")
+    RAW_Skynet = os.environ.get("SKYNET", "")
+    RAW_ENFORCERS = os.environ.get("ENFORCERS", "")
     Skynet = [int(x) for x in os.environ.get("SKYNET", "").split()]
     INSPECTORS = [int(x) for x in os.environ.get("INSPECTORS", "").split()]
     ENFORCERS = [int(x) for x in os.environ.get("ENFORCERS", "").split()]
@@ -49,8 +49,8 @@ else:
     Skynet = data["Skynet"]
     ENFORCERS = data["ENFORCERS"]
     INSPECTORS = data["INSPECTORS"]
-    Skynet_logs = Config.Skynet_logs
-    Skynet_approved_logs = Config.Skynet_approved_logs
+    Skynet_logs = Config.SKYNET_LOGS
+    Skynet_approved_logs = Config.Skynet_APPROVED_LOGS
     GBAN_MSG_LOGS = Config.GBAN_MSG_LOGS
     BOT_TOKEN = Config.BOT_TOKEN
 
