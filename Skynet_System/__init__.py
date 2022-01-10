@@ -20,6 +20,7 @@ logging.basicConfig(
     level=logging.INFO,
 )
 
+"""
 ENV = bool(os.environ.get("ENV", False))
 if ENV:
     API_ID_KEY = int(os.environ.get("API_ID_KEY"))
@@ -27,34 +28,63 @@ if ENV:
     STRING_SESSION = os.environ.get("STRING_SESSION")
     HEROKU_API_KEY = os.environ.get("HEROKU_API_KEY")
     HEROKU_APP_NAME = os.environ.get("HEROKU_APP_NAME")
-    RAW_Skynet = os.environ.get("SKYNET", "")
+    RAW_Skynet = os.environ.get("Skynet", "")
     RAW_ENFORCERS = os.environ.get("ENFORCERS", "")
-    Skynet = [int(x) for x in os.environ.get("SKYNET", "").split()]
+    Skynet = [int(x) for x in os.environ.get("Skynet", "").split()]
     INSPECTORS = [int(x) for x in os.environ.get("INSPECTORS", "").split()]
     ENFORCERS = [int(x) for x in os.environ.get("ENFORCERS", "").split()]
     MONGO_DB_URL = os.environ.get("MONGO_DB_URL")
-    Skynet_logs = int(os.environ.get("SKYNET_LOGS"))
-    Skynet_approved_logs = int(os.environ.get("SKYNET_APPROVED_LOGS"))
+    Skynet_logs = int(os.environ.get("Skynet_logs"))
+    Skynet_approved_logs = int(os.environ.get("Skynet_approved_logs"))
     GBAN_MSG_LOGS = int(os.environ.get("GBAN_MSG_LOGS"))
     BOT_TOKEN = os.environ.get("BOT_TOKEN")
 else:
     import Skynet_System.config as Config
-
     API_ID_KEY = Config.API_ID
     API_HASH_KEY = Config.API_HASH
     STRING_SESSION = Config.STRING_SESSION
     MONGO_DB_URL = Config.MONGO_DB_URL
-    with open(os.path.join(os.getcwd(), "Skynet_System/elevated_users.json"), "r") as f:
+    with open(os.path.join(os.getcwd(), "Skynet_System//elevated_users.json"), "r") as f:
         data = json.load(f)
     Skynet = data["Skynet"]
     ENFORCERS = data["ENFORCERS"]
     INSPECTORS = data["INSPECTORS"]
-    Skynet_logs = Config.SKYNET_LOGS
-    Skynet_approved_logs = Config.Skynet_APPROVED_LOGS
+    Skynet_logs = Config.Skynet_logs
+    Skynet_approved_logs = Config.Skynet_approved_logs
     GBAN_MSG_LOGS = Config.GBAN_MSG_LOGS
     BOT_TOKEN = Config.BOT_TOKEN
+"""
+
+API_ID_KEY = 
+
+API_HASH_KEY = ""
+  
+STRING_SESSION = ""
+
+BOT_TOKEN = ""
+"""
+with open(os.path.join(os.getcwd(), "Sanatan_Raksha_System/elevated_users.json"), "r") as f:
+    data = json.load(f)
+Skynet = data["Skynet"]
+ENFORCERS = data["ENFORCERS"]
+INSPECTORS = data["INSPECTORS"]
+"""
+# Make Repo private first
+
+Skynet = [2053172802]
+INSPECTORS = [2053172802, 5038447339, 1969730847, 2088713608, 2089452706, 1118151835, 1171308376]
+ENFORCERS = [2037190400]
+# affenf and addins won't work
+MONGO_DB_URL = ""
+
+Skynet_logs = "" # SRS • Global Scan logs username 
+
+Skynet_approved_logs = "" # SRS • Approvals username 
+
+GBAN_MSG_LOGS = "" # SRS • Core/ where gban/fban will be executed
 
 INSPECTORS.extend(Skynet)
+
 ENFORCERS.extend(INSPECTORS)
 
 session = aiohttp.ClientSession()
