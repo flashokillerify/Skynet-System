@@ -27,14 +27,14 @@ if ENV:
     STRING_SESSION = os.environ.get("STRING_SESSION")
     HEROKU_API_KEY = os.environ.get("HEROKU_API_KEY")
     HEROKU_APP_NAME = os.environ.get("HEROKU_APP_NAME")
-    RAW_Skynet = os.environ.get("Skynet", "")
-    RAW_ENFORCERS = os.environ.get("ENFORCERS", "")
-    Skynet = [int(x) for x in os.environ.get("Skynet", "").split()]
+    RAW_Skynet = os.environ.get("SKYNEST", "")
+    RAW_ENFORCERS = os.environ.get("ENFFORCERS", "")
+    Skynet = [int(x) for x in os.environ.get("SKYNET", "").split()]
     INSPECTORS = [int(x) for x in os.environ.get("INSPECTORS", "").split()]
     ENFORCERS = [int(x) for x in os.environ.get("ENFORCERS", "").split()]
     MONGO_DB_URL = os.environ.get("MONGO_DB_URL")
-    Skynet_logs = int(os.environ.get("Skynet_logs"))
-    Skynet_approved_logs = int(os.environ.get("Skynet_approved_logs"))
+    Skynet_logs = int(os.environ.get("SKYNET_LOGS"))
+    Skynet_approved_logs = int(os.environ.get("SKYNET_APPROVED_LOGS"))
     GBAN_MSG_LOGS = int(os.environ.get("GBAN_MSG_LOGS"))
     BOT_TOKEN = os.environ.get("BOT_TOKEN")
 else:
